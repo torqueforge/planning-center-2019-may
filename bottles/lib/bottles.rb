@@ -20,12 +20,12 @@ class Bottles
   def bottle_number_for(number)
     case number
     when 0
-      BottleNumber0
+      BottleNumber0.new(number)
     when 1
-      BottleNumber1
+      BottleNumber1.new(number)
     else
-      BottleNumber
-    end.new(number)
+      BottleNumber.new(number)
+    end
   end
 end
 
